@@ -21,34 +21,49 @@
         >
           Blog
         </button>
-        <img src="img/Frame 2.png" alt="" />
-        <img class="" src="img/Frame 3.png" alt="" />
+        <div class="flex items-center gap-5">
+          <img src="images/logo.png" alt="" />
+          <p class="font-semibold">Donate Bangladesh</p>
+        </div>
+        <div class="flex items-center gap-5">
+          <img class="" src="images/coin.png" alt="" />
+          <p class="font-semibold"><span id="total-amount">5500</span> BDT</p>
+        </div>
       </div>
     </header>
-    <!-- Donation area start -->
-    <div class="container mx-auto py-10 my-10 xl:px-40 px-10">
+    <!-- Buttons -->
+    <div class="container mx-auto pt-40 xl:px-40 px-10">
       <div class="grid">
         <div class="flex gap-10 mx-auto">
           <button
+            id="donation-btn"
+            onclick="donation()"
             class="bg-[#B4F461] text-white font-semibold w-[150px] h-[49px] rounded-xl"
           >
             Donation
           </button>
-          <button class="border-2 font-semibold w-[150px] h-[49px] rounded-xl">
+          <button
+            id="history-btn"
+            onclick="history()"
+            class="border-2 font-semibold w-[150px] h-[49px] rounded-xl"
+          >
             History
           </button>
         </div>
       </div>
+    </div>
+    <!-- Donation area start -->
+    <div id="donation" class="container mx-auto my-10 xl:px-40 px-10">
       <div class="grid grid-cols-1 xl:grid-cols-2 mt-20 p-10 rounded-xl border">
         <div>
-          <img src="img/Rectangle 1.png" alt="" />
+          <img src="images/feni.png" alt="" />
         </div>
         <div>
           <div
             class="bg-[#1111110D] w-[110px] h-[44px] flex items-center justify-center rounded-xl"
           >
-            <img class="w-6 h-6" src="img/dollar 1.png" alt="" />
-            <span class="pl-2">0 BDT</span>
+            <img class="w-6 h-6" src="images/coin.png" alt="" />
+            <span class="pl-2"> <span id="don-amount">0</span> BDT</span>
           </div>
           <h4 class="font-bold text-[20px] py-5">
             Donate for Flood at Noakhali, Bangladesh
@@ -62,11 +77,13 @@
             need.
           </p>
           <input
+            id="don-input"
             class="border w-full py-3 rounded-xl px-10 mt-5"
             type="number"
             placeholder="Write Donation Amount"
           />
           <button
+            onclick="(handleDonation())"
             class="bg-[#B4F461] w-full py-3 font-semibold text-xl rounded-xl mt-5"
           >
             Donate Now
@@ -75,6 +92,21 @@
       </div>
     </div>
     <!-- Donation area end -->
+
+    <!-- History -->
+    <div id="history" class="container mx-auto my-10 xl:px-40 px-10 hidden">
+      <div class="border p-10 rounded-xl">
+        <p class="text-2xl mb-5 font-semibold">
+          96500 Taka is Donated for famine-2024 at Feni, Bangladesh
+        </p>
+
+        <p>
+          Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)
+        </p>
+      </div>
+    </div>
+    <!-- History -->
+
     <!-- script -->
     <script src="script.js"></script>
   </body>
