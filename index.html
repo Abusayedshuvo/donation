@@ -32,7 +32,7 @@
       </div>
     </header>
     <!-- Buttons -->
-    <div class="container mx-auto pt-40 xl:px-40 px-10">
+    <div class="container mx-auto pt-20 xl:px-40 px-10">
       <div class="grid">
         <div class="flex gap-10 mx-auto">
           <button
@@ -63,10 +63,10 @@
             class="bg-[#1111110D] w-[110px] h-[44px] flex items-center justify-center rounded-xl"
           >
             <img class="w-6 h-6" src="images/coin.png" alt="" />
-            <span class="pl-2"> <span id="don-amount">0</span> BDT</span>
+            <span class="pl-2"> <span class="don-amount">0</span> BDT</span>
           </div>
           <h4 class="font-bold text-[20px] py-5">
-            Donate for Flood at Noakhali, Bangladesh
+            Donate for Flood at Noakhali, Bangladesh. Hasan jara
           </h4>
           <p>
             The recent floods in Noakhali have caused significant damage to
@@ -77,13 +77,50 @@
             need.
           </p>
           <input
-            id="don-input"
+            id="don-input1"
             class="border w-full py-3 rounded-xl px-10 mt-5"
             type="number"
             placeholder="Write Donation Amount"
           />
           <button
-            onclick="(handleDonation())"
+            id="donate1"
+            class="bg-[#B4F461] w-full py-3 font-semibold text-xl rounded-xl mt-5"
+          >
+            Donate Now
+          </button>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 xl:grid-cols-2 mt-20 p-10 rounded-xl border">
+        <div>
+          <img src="images/noakhali.png" alt="" />
+        </div>
+        <div>
+          <div
+            class="bg-[#1111110D] w-[110px] h-[44px] flex items-center justify-center rounded-xl"
+          >
+            <img class="w-6 h-6" src="images/coin.png" alt="" />
+            <span class="pl-2"> <span class="don-amount">0</span> BDT</span>
+          </div>
+          <h4 class="font-bold text-[20px] py-5">
+            Donate for Flood Relief in Feni,Bangladesh
+          </h4>
+          <p>
+            The recent floods in Noakhali have caused significant damage to
+            homes infrastructure. Your donation will help provide essential
+            supplies and to those affected by this disaster. Every contribution,
+            big or small, makes difference. Please join us in supporting the
+            relief efforts and making a positive impact on the lives of those in
+            need.
+          </p>
+          <input
+            id="don-input2"
+            class="border w-full py-3 rounded-xl px-10 mt-5"
+            type="number"
+            placeholder="Write Donation Amount"
+          />
+          <button
+            id="donate2"
             class="bg-[#B4F461] w-full py-3 font-semibold text-xl rounded-xl mt-5"
           >
             Donate Now
@@ -94,17 +131,10 @@
     <!-- Donation area end -->
 
     <!-- History -->
-    <div id="history" class="container mx-auto my-10 xl:px-40 px-10 hidden">
-      <div class="border p-10 rounded-xl">
-        <p class="text-2xl mb-5 font-semibold">
-          96500 Taka is Donated for famine-2024 at Feni, Bangladesh
-        </p>
-
-        <p>
-          Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)
-        </p>
-      </div>
-    </div>
+    <div
+      id="history"
+      class="container mx-auto my-10 xl:px-40 px-10 hidden"
+    ></div>
     <!-- History -->
 
     <!-- script -->
